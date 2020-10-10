@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8g8-IF-2iL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8g8-IF-2iL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--الافلام-->
+        <!--Movies-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MovieMasterVC" customModule="Classwork6" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,43 +21,48 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxm-qj-79K">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxm-qj-79K">
                                 <rect key="frame" x="31" y="194" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yil-sg-jAl"/>
                                     <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zw6-4E-n2m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P63-xH-sJh">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P63-xH-sJh">
                                 <rect key="frame" x="157" y="194" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <action selector="btn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ynP-o9-xqB"/>
                                     <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T10-Vk-Qgy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20Q-tN-UR4">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20Q-tN-UR4">
                                 <rect key="frame" x="31" y="340" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <action selector="btn4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRn-KR-xCF"/>
                                     <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xK-V8-hOQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26G-ER-PEh">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26G-ER-PEh">
                                 <rect key="frame" x="283" y="340" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <action selector="btn6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qc7-ct-a5p"/>
                                     <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s0b-lp-S7o"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qct-Vg-4WY">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qct-Vg-4WY">
                                 <rect key="frame" x="157" y="340" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <action selector="btn5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YSl-mq-F2r"/>
                                     <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="We4-D0-jKW"/>
                                 </connections>
                             </button>
@@ -63,67 +70,74 @@
                                 <rect key="frame" x="0.0" y="486" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHf-hn-Tsy">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHf-hn-Tsy">
                                 <rect key="frame" x="31" y="592" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyy-n2-rO5"/>
+                                    <action selector="btn7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bKb-Jy-b9h"/>
+                                    <action selector="goToDetailsDC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zq5-c7-Ge5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vv-9M-eM4">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vv-9M-eM4">
                                 <rect key="frame" x="283" y="592" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="826-Vl-5yM"/>
+                                    <action selector="btn9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1rc-XL-fqs"/>
+                                    <action selector="goToDetailsDC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="He0-M6-QMY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ow-WN-Eco">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ow-WN-Eco">
                                 <rect key="frame" x="157" y="592" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fK5-lI-Al6"/>
+                                    <action selector="btn8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tro-AX-VjK"/>
+                                    <action selector="goToDetailsDC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dip-vg-mTw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="059-Ug-BX8">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="059-Ug-BX8">
                                 <rect key="frame" x="31" y="738" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tg2-7u-oQ6"/>
+                                    <action selector="btn10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0C-Sz-WNV"/>
+                                    <action selector="goToDetailsDC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wts-ol-KAw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL6-2d-vvo">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL6-2d-vvo">
                                 <rect key="frame" x="283" y="738" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZk-qB-BOY"/>
+                                    <action selector="btn12:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3s-aE-3By"/>
+                                    <action selector="goToDetailsDC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hkm-H5-D5z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gy8-8R-iX9">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gy8-8R-iX9">
                                 <rect key="frame" x="157" y="738" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s7U-Jf-e7O"/>
+                                    <action selector="btn11:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yte-A3-gfS"/>
+                                    <action selector="goToDetailsDC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12b-VN-4Oh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-Lb-9RT">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-Lb-9RT">
                                 <rect key="frame" x="283" y="194" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <action selector="btn3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q62-sb-c8S"/>
                                     <action selector="goToDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SM7-wS-okx"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="الافلام" id="ZOp-Vz-C3O"/>
+                    <navigationItem key="navigationItem" title="Movies" id="ZOp-Vz-C3O"/>
                     <connections>
                         <outlet property="DCImg0" destination="BHf-hn-Tsy" id="gPm-OD-byf"/>
                         <outlet property="DCImg1" destination="0Ow-WN-Eco" id="hY3-fq-VF9"/>
@@ -137,14 +151,14 @@
                         <outlet property="marvelImg3" destination="20Q-tN-UR4" id="jU7-2n-lf2"/>
                         <outlet property="marvelImg4" destination="qct-Vg-4WY" id="99c-uF-a5E"/>
                         <outlet property="marvelImg5" destination="26G-ER-PEh" id="wcZ-OY-ZH3"/>
-                        <segue destination="vxT-oO-HZO" kind="show" identifier="details" id="ze9-XZ-rog"/>
+                        <segue destination="vxT-oO-HZO" kind="show" identifier="details" id="vc5-Uy-XJS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1952.1739130434785" y="138.61607142857142"/>
+            <point key="canvasLocation" x="922" y="153"/>
         </scene>
-        <!--اسم الفلم-->
+        <!--Movie-->
         <scene sceneID="CX9-U6-sBE">
             <objects>
                 <viewController id="vxT-oO-HZO" customClass="MovieDetaisVC" customModule="Classwork6" customModuleProvider="target" sceneMemberID="viewController">
@@ -221,10 +235,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Q79-5g-vIU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="اسم الفلم" id="OV8-l0-WCp"/>
+                    <navigationItem key="navigationItem" title="Movie" id="OV8-l0-WCp"/>
                     <connections>
                         <outlet property="actorImage1" destination="iET-1S-fZa" id="MaA-sd-KWe"/>
                         <outlet property="actorImage2" destination="aJU-f7-uif" id="wJv-mR-Cq2"/>
@@ -240,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ4-ZO-g17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2704.347826086957" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1829" y="153"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MfQ-TH-TXY">
@@ -258,11 +272,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ib8-qf-d7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+            <point key="canvasLocation" x="12" y="153"/>
         </scene>
     </scenes>
     <resources>
         <image name="DC_Logo" width="3297" height="1135"/>
         <image name="MarvelLogo" width="1200" height="630"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
